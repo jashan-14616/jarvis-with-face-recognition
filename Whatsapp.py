@@ -39,16 +39,16 @@ update = int((datetime.now()+timedelta(minutes = 2)).strftime("%M"))
 
 def sendMessage():
     speak("Who do you wan to message")
-    a = int(input('''MOM - 1
+    a = int(input('''MOM - 1    #you can change names accordingly
     DIDI - 2'''))
     if a == 1:
         speak("Whats the message")
         message = str(input("Enter the message- "))
-        pywhatkit.sendwhatmsg("+918901021114",message,time_hour=strTime,time_min=update) #Enter The number here instead of +91000
+        pywhatkit.sendwhatmsg("+91",message,time_hour=strTime,time_min=update) #Enter your ph.number here 
     elif a==2:
         speak("Whats the message")
         message = str(input("Enter the message- "))
-        pywhatkit.sendwhatmsg("+919466446193",message,time_hour=strTime,time_min=update)
+        pywhatkit.sendwhatmsg("+91",message,time_hour=strTime,time_min=update)#Add your ph.number
     elif a==3:
         pass
 
